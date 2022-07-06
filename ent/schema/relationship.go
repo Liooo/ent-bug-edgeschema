@@ -14,9 +14,9 @@ type Relationship struct {
 // Fields of the Relationship.
 func (Relationship) Fields() []ent.Field {
     return []ent.Field{
-        field.String("follower_user_id"),
-        field.String("followee_user_id"),
-        field.String("relationship_info_id"),
+        field.Int("follower_user_id"),
+        field.Int("followee_user_id"),
+        field.Int("relationship_info_id"),
     }
 }
 

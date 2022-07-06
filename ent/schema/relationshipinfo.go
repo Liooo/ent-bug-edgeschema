@@ -3,6 +3,7 @@ package schema
 import (
     "entgo.io/ent"
     "entgo.io/ent/schema/edge"
+    "entgo.io/ent/schema/field"
 )
 
 // RelationshipInfo holds the schema definition for the RelationshipInfo entity.
@@ -13,6 +14,7 @@ type RelationshipInfo struct {
 // Fields of the RelationshipInfo.
 func (RelationshipInfo) Fields() []ent.Field {
     return []ent.Field{
+        field.String("name"),
     }
 }
 
